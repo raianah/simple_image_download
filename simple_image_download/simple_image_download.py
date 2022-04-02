@@ -136,7 +136,7 @@ class Downloader:
                     cache_out[file_name] = [path, webpage_url]
                 else:
                     pass
-                bar.update(bar.currval + 1)
+                bar.update(i + 1)
             i += 1
         bar.finish()
         if verbose:
